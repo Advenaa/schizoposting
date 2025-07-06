@@ -4,17 +4,7 @@
   <body>
     <div class="site-wrapper{% if page.id == 'home' %} home-layout{% endif %}">
       {% if page.id == 'home' %}
-        <aside class="sidebar">
-          <div class="sidebar-title">{{ site.title | upcase }}</div>
-          <nav class="sidebar-nav">
-            <a href="{{ site.baseurl }}/">home</a><br/>
-            <a href="{{ site.baseurl }}/about">about</a>
-          </nav>
-          <div class="sidebar-contact">
-            <div class="contact-row"><img class="contact-icon" src="{{ site.baseurl }}/assets/icons8-twitter-bird-50.png" alt="Twitter"> <a href="https://twitter.com/advenaletters" target="_blank" rel="noopener">@advenaletters</a></div>
-            <div class="contact-row"><img class="contact-icon" src="{{ site.baseurl }}/assets/icons8-discord-50.png" alt="Discord"> <a href="https://discord.gg/advena" target="_blank" rel="noopener">discord.gg/advena</a></div>
-          </div>
-        </aside>
+        {% include sidebar.html %}
       {% endif %}
       <div class="wrapper">
         <main>{{ content }}</main>
