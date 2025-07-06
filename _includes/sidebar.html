@@ -1,0 +1,15 @@
+<aside class="sidebar">
+  <div class="sidebar-title">{{ site.title | upcase }}</div>
+  <nav class="sidebar-nav">
+    <a href="{{ site.baseurl }}/" {% if page.id == 'home' %}class="active"{% endif %}>home</a>
+    <a href="{{ site.baseurl }}/about" {% if page.url contains '/about' %}class="active"{% endif %}>about</a>
+  </nav>
+  <div class="sidebar-contact">
+    {% for contact in site.data.contacts %}
+      <div class="contact-row">
+        <img class="contact-icon" src="{{ site.baseurl }}/assets/{{ contact.icon }}" alt="{{ contact.name }}">
+        <a href="{{ contact.url }}" target="_blank" rel="noopener">{{ contact.label }}</a>
+      </div>
+    {% endfor %}
+  </div>
+</aside>

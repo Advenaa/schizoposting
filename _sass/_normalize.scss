@@ -338,7 +338,7 @@ template {
 }
 
 .sidebar, .note-layout .sidebar {
-  background: #181a1b;
+  background: $flexoki-bg;
   color: $flexoki-tx;
   width: 220px;
   flex-shrink: 0;
