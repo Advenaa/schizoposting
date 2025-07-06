@@ -13,7 +13,7 @@ permalink: /
     {% assign sorted_notes = site.notes | sort: 'date' | reverse %}
     {% for note in sorted_notes %}
       <div class="note-item">
-        <a class="note-title internal-link" href="{{ note.url }}">{{ note.title }} <span class="note-arrow">&raquo;</span></a>
+        <a class="note-title internal-link" href="{{ note.url }}">{{ note.title }}</a>
         <div class="note-meta">
           {% if note.author %}{{ note.author }} · {% endif %}{% if note.date %}{{ note.date | date: "%Y-%m-%d" }}{% endif %}
         </div>
