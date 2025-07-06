@@ -7,22 +7,6 @@ permalink: /
 
 <h1>{{ site.title }}</h1>
 
-<hr/>
-
-<section>
-  <h2>Topics</h2>
-  <div style="margin-bottom: 1.5em;">
-    {% assign all_tags = site.notes | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
-    {% for tag in all_tags %}
-      {% unless tag == '' %}
-        <a href="{{ site.baseurl }}/tag/{{ tag | strip }}" style="margin-right: 1em;">{{ tag | strip }}</a>
-      {% endunless %}
-    {% endfor %}
-  </div>
-</section>
-
-<hr/>
-
 <section>
   <h2 class="accent-heading">Some <span class="accent">Notes</span></h2>
   <div class="notes-list">

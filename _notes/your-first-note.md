@@ -1,5 +1,6 @@
 ---
-title: Your first seed
+title: Your first note
+date: 2025-07-07
 ---
 
 ### Welcome!
