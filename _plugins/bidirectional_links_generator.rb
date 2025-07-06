@@ -2,7 +2,9 @@
 class BidirectionalLinksGenerator < Jekyll::Generator
   def generate(site)
     @site = site
-    @all_docs = site.collections['notes'].docs + site.pages
+    @all_notes = site.collections['notes'].docs
+    @all_pages = site.pages
+    @all_docs = @all_notes + @all_pages
     @link_extension = site.config["use_html_extension"] ? '.html' : ''
     
     # Build efficient lookup structures once
@@ -110,7 +112,7 @@ class BidirectionalLinksGenerator < Jekyll::Generator
     backlinks_map = build_backlinks_map
     
     # Process each note for backlinks and graph data
-    @all_docs.select { |doc| doc.collection&.label == 'notes' }.each do |note|
+    @all_notes.each do |note|
       next if note.path.include?('_notes/index.html')
       
       # Set backlinks for Jekyll
