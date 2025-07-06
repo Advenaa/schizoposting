@@ -1,0 +1,5 @@
+current directory: /workspace/vendor/bundle/ruby/3.3.0/gems/sass-embedded-1.83.4/ext/sass
+/usr/bin/ruby3.3 -I/usr/lib/ruby/vendor_ruby -rrubygems /workspace/vendor/bundle/ruby/3.3.0/gems/rake-13.2.1/exe/rake RUBYARCHDIR\=/workspace/vendor/bundle/ruby/3.3.0/extensions/x86_64-linux-gnu/3.3.0/sass-embedded-1.83.4 RUBYLIBDIR\=/workspace/vendor/bundle/ruby/3.3.0/extensions/x86_64-linux-gnu/3.3.0/sass-embedded-1.83.4
+gem install --force --install-dir /workspace/vendor/bundle/ruby/3.3.0/gems/sass-embedded-1.83.4/ext/sass/ruby --no-document --ignore-dependencies --platform x86_64-linux-gnu --version 1.83.4 sass-embedded
+mv /workspace/vendor/bundle/ruby/3.3.0/gems/sass-embedded-1.83.4/ext/sass/ruby/gems/sass-embedded-1.83.4-x86_64-linux-gnu/ext/sass/dart-sass dart-sass
+rm -rf /workspace/vendor/bundle/ruby/3.3.0/gems/sass-embedded-1.83.4/ext/sass/ruby

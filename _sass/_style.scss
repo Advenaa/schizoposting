@@ -7,9 +7,9 @@ body {
   max-width: none;
   line-height: 1.8;
   overflow-x: hidden;
-  font-size: 1.25em;
+  font-size: 1.4em;
   @media (min-width: 820px) {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -28,13 +28,13 @@ h6 {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3.4em;
 }
 h2 {
-  font-size: 2.2em;
+  font-size: 2.4em;
 }
 h3 {
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 section {
@@ -86,7 +86,7 @@ img {
 blockquote {
   padding: 1.5em;
   margin: 0;
-  font-size: 1.1em;
+  font-size: 1.2em;
   background: $color-box-background;
   border-radius: $border-radius;
   color: $flexoki-tx2;
@@ -119,6 +119,13 @@ ul, ol {
   background: $flexoki-bg;
 }
 
+.site-wrapper.page-layout {
+  width: 100vw;
+  max-width: none;
+  display: flex;
+  background: $flexoki-bg;
+}
+
 .sidebar {
   background: $flexoki-bg;
   color: $flexoki-tx;
@@ -129,7 +136,7 @@ ul, ol {
   flex-direction: column;
   align-items: flex-start;
   min-height: 100vh;
-  font-size: 1.1em;
+  font-size: 1.2em;
   box-shadow: none;
   border-right: none;
 }
@@ -216,6 +223,16 @@ ul, ol {
   display: block;
 }
 
+.site-wrapper.page-layout .wrapper {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 3em 0 3em 0;
+  display: block;
+}
+
 .page-content {
   padding-left: 2.5em;
   max-width: 900px;
@@ -227,8 +244,17 @@ ul, ol {
   padding: 0;
 }
 
+.site-wrapper.page-layout main {
+  margin: 0;
+  max-width: none;
+  padding: 0;
+}
+
 @media (max-width: 900px) {
   .site-wrapper.home-layout {
+    flex-direction: column;
+  }
+  .site-wrapper.page-layout {
     flex-direction: column;
   }
   .sidebar {
@@ -245,6 +271,9 @@ ul, ol {
     margin-bottom: 0;
   }
   .site-wrapper.home-layout .wrapper {
+    padding: 2em 1em 1em 1em;
+  }
+  .site-wrapper.page-layout .wrapper {
     padding: 2em 1em 1em 1em;
   }
 }
@@ -305,29 +334,7 @@ ul, ol {
   font-family: 'Fira Mono', 'Consolas', monospace;
 }
 
-.site-wrapper.note-layout {
-  width: 100vw;
-  max-width: none;
-  display: flex;
-  background: $flexoki-bg;
-}
 
-.note-layout .sidebar {
-  width: 260px;
-  flex-shrink: 0;
-  padding: 3em 0 2em 2.5em;
-  font-size: 1.3em;
-}
-
-.note-layout .wrapper {
-  flex: 1;
-  min-width: 0;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 900px;
-  padding: 3em 0 3em 0;
-  display: block;
-}
 
 .note-heading {
   font-size: 2.7em;
@@ -355,4 +362,24 @@ ul, ol {
 
 .note-content {
   margin-bottom: 2em;
+}
+
+.note-content-wrapper {
+  padding-left: 2.5em;
+  max-width: 900px;
+}
+
+.note-article {
+  margin-bottom: 2em;
+}
+
+.note-backlinks {
+  margin-top: 3em;
+}
+
+.backlink-box {
+  padding: 1em;
+  background: $color-box-background;
+  border-radius: $border-radius;
+  margin-bottom: 1em;
 } 
