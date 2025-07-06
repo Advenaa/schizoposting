@@ -2,10 +2,8 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    <div class="site-wrapper{% if page.id == 'home' %} home-layout{% endif %}">
-      {% if page.id == 'home' %}
-        {% include sidebar.html %}
-      {% endif %}
+    <div class="site-wrapper">
+      {% include sidebar.html %}
       <div class="wrapper">
         <main>{{ content }}</main>
         <footer>{% include footer.html %}</footer>
