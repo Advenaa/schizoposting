@@ -348,4 +348,137 @@ ul, ol {
 
 .note-content {
   margin-bottom: 2em;
+}
+
+.egirl-layout {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 6rem 1.5rem;
+  background: none;
+}
+
+.egirl-layout .note-header {
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.egirl-layout .note-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 0.7rem 0;
+  color: $flexoki-tx;
+  letter-spacing: -0.01em;
+  font-family: $font-family;
+}
+
+.egirl-layout .note-date {
+  font-size: 1.05rem;
+  color: $flexoki-tx2;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  margin-bottom: 0.5rem;
+}
+
+.egirl-layout .note-content {
+  font-size: 1.13rem;
+  line-height: 1.75;
+  color: $flexoki-tx;
+  margin-bottom: 2rem;
+}
+
+.egirl-layout .note-content h1,
+.egirl-layout .note-content h2,
+.egirl-layout .note-content h3 {
+  font-family: $font-family;
+  font-weight: 700;
+  margin: 2.2rem 0 1.1rem 0;
+  line-height: 1.25;
+}
+
+.egirl-layout .note-content h1 { font-size: 2rem; }
+.egirl-layout .note-content h2 { font-size: 1.5rem; }
+.egirl-layout .note-content h3 { font-size: 1.2rem; }
+
+.egirl-layout .note-content p {
+  margin: 0 0 1.5rem 0;
+}
+
+.egirl-layout .note-content ul,
+.egirl-layout .note-content ol {
+  margin: 1.5rem 0 1.5rem 2rem;
+}
+
+.egirl-layout .note-content blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 3px solid $flexoki-accent;
+  background: rgba($flexoki-accent, 0.05);
+  font-style: italic;
+}
+
+.egirl-layout .note-content code {
+  background: #232323;
+  color: #f8f8f2;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.97em;
+}
+
+.egirl-layout .note-content pre {
+  background: #181818;
+  padding: 1.2em 1em;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.egirl-layout .note-content pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+  font-size: 1em;
+}
+
+.egirl-layout .note-readtime {
+  font-size: 1rem;
+  color: $flexoki-tx2;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  margin-bottom: 1.5rem;
+  margin-top: -0.5rem;
+}
+
+.egirl-layout .note-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  margin-bottom: 1.5rem;
+  margin-top: 0.2rem;
+}
+
+.egirl-layout .note-date,
+.egirl-layout .note-readtime,
+.egirl-layout .note-dot {
+  font-size: 1rem;
+  color: $flexoki-tx2;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.egirl-layout .note-dot {
+  font-size: 1.1em;
+  line-height: 1;
+  user-select: none;
+}
+
+@media (max-width: 600px) {
+  .egirl-layout {
+    padding: 2rem 0.5rem 3rem 0.5rem;
+  }
+  .egirl-layout .note-title {
+    font-size: 1.5rem;
+  }
+  .egirl-layout .note-content {
+    font-size: 1rem;
+  }
 } 

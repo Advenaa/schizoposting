@@ -2,22 +2,18 @@
 layout: default
 ---
 
-<article class="page-article">
-  <div class="page-content">
-    <div class="content-inner">
-      <header class="note-header">
-        <h1 class="note-title">{{ page.title }}</h1>
-        {% if page.date %}
-          <div class="note-meta">
-            {{ page.date | date: "%B %d, %Y" }}
-            {% assign words = content | number_of_words %}
-            {% assign minutes = words | divided_by:200 | plus:1 %}
-            &middot; {{ minutes }} minute read
-          </div>
-        {% endif %}
-      </header>
-      {{ content }}
-      <footer>{% include footer.html %}</footer>
+<article class="note-article egirl-layout">
+  <header class="note-header">
+    <h1 class="note-title">{{ page.title }}</h1>
+    <div class="note-meta-row">
+      <span class="note-date">{{ page.date | date: "%B %d, %Y" }}</span>
+      {% assign words = content | number_of_words %}
+      {% assign minutes = words | divided_by:200 | plus:1 %}
+      <span class="note-dot">&middot;</span>
+      <span class="note-readtime">{{ minutes }} minute read</span>
     </div>
-  </div>
+  </header>
+  <section class="note-content">
+    {{ content }}
+  </section>
 </article>
