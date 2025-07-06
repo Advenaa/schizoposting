@@ -5,29 +5,48 @@ id: home
 permalink: /
 ---
 
-# Welcome! 🌱
+<h1>{{ site.title }}</h1>
 
-<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
-  Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
-</p>
+<section>
+  <h2>Latest</h2>
+  {% assign latest_note = site.notes | sort: 'date' | last %}
+  {% if latest_note %}
+    <h3><a href="{{ latest_note.url }}">{{ latest_note.title }}</a></h3>
+    {% if latest_note.date %}<p>{{ latest_note.date | date: "%B %e, %Y" }}</p>{% endif %}
+    <p>{{ latest_note.excerpt | strip_html | truncate: 160 }}</p>
+    <a href="{{ latest_note.url }}">Keep reading →</a>
+  {% else %}
+    <p>No notes yet.</p>
+  {% endif %}
+</section>
 
-This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
+<hr/>
 
-The easiest way to get started is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
+<section>
+  <h2>Topics</h2>
+  <div style="margin-bottom: 1.5em;">
+    {% assign all_tags = site.notes | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
+    {% for tag in all_tags %}
+      {% unless tag == '' %}
+        <a href="{{ site.baseurl }}/tag/{{ tag | strip }}" style="margin-right: 1em;">{{ tag | strip }}</a>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</section>
 
-<strong>Recently updated notes</strong>
+<hr/>
 
-<ul>
-  {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
-  {% for note in recent_notes limit: 5 %}
-    <li>
-      {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-
-<style>
-  .wrapper {
-    max-width: 46em;
-  }
-</style>
+<section>
+  <h2 class="accent-heading">Some <span class="accent">Notes</span></h2>
+  <div class="notes-list">
+    {% assign sorted_notes = site.notes | sort: 'date' | reverse %}
+    {% for note in sorted_notes %}
+      <div class="note-item">
+        <a class="note-title" href="{{ note.url }}">{{ note.title }} <span class="note-arrow">&raquo;</span></a>
+        <div class="note-meta">
+          {% if note.author %}{{ note.author }} · {% endif %}{% if note.date %}{{ note.date | date: "%Y-%m-%d" }}{% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

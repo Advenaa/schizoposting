@@ -336,3 +336,16 @@ template {
 [hidden] {
   display: none;
 }
+
+.sidebar, .note-layout .sidebar {
+  background: #181a1b;
+  color: $flexoki-tx;
+  width: 220px;
+  flex-shrink: 0;
+  padding: 2.5em 0 2em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: none;
+  border: none;
+}

@@ -1,38 +1,77 @@
-$color-primary: hsl(0, 0%, 10%);
-$color-text: hsl(0, 0%, 20%);
-$color-subtext: hsl(0, 0%, 30%);
-$color-border: hsl(0, 0%, 85%);
-$color-box-background: mix($color-primary, white, 4%);
-$border-radius: 4px;
-$font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-  sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-
 body {
-  box-sizing: content-box;
+  background: $flexoki-bg;
+  color: $flexoki-tx;
   font-family: $font-family;
-  margin: 0 auto;
-  line-height: 1.7;
-  padding: 4vh 6vw;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  line-height: 1.8;
   overflow-x: hidden;
-  color: $color-text;
-  font-size: 1rem;
-  max-width: 63em;
-
+  font-size: 1.25em;
   @media (min-width: 820px) {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
   }
 }
 
-time {
-  display: block;
-  color: $color-subtext;
-  margin: 0.5em 0 1em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $flexoki-tx;
+  font-family: 'Oswald', $font-family;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  padding-bottom: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+}
+h2 {
+  font-size: 2.2em;
+}
+h3 {
+  font-size: 1.5em;
+}
+
+section {
+  margin-bottom: 2.5em;
+}
+
+a {
+  color: $flexoki-accent;
+  border-bottom: 1px solid $color-border;
+  text-decoration: none;
+  transition: color 0.2s, border 0.2s;
+  font-weight: 600;
+  &:hover {
+    color: lighten($flexoki-accent, 15%);
+    border-bottom: 1px solid lighten($flexoki-accent, 15%);
+    background: none;
+  }
+  &:after {
+    content: "";
+  }
+}
+
+nav {
+  margin: 1em 0 3em;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: $color-border;
+  margin: 2em 0;
 }
 
 footer {
   margin: 2em 0;
-  font-size: 0.8em;
-  color: mix($color-text, white, 80%);
+  font-size: 1em;
+  color: $flexoki-tx2;
   padding-top: 1em;
 }
 
@@ -47,100 +86,273 @@ img {
 blockquote {
   padding: 1.5em;
   margin: 0;
-  font-size: 0.88em;
+  font-size: 1.1em;
   background: $color-box-background;
   border-radius: $border-radius;
-
-  p {
-    margin: 0;
-  }
-}
-
-hr {
-  width: 100%;
-  border: 0;
-  height: 1px;
-  margin: 1.5em 0;
-  background: $color-border;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.3;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-a {
-  transition: background 300ms;
-  padding: 0 0.1em;
-  text-decoration: none;
-  border-bottom: 1px solid $color-border;
-  color: $color-primary;
-  &:hover {
-    color: black !important;
-    background: #fffaf1;
-  }
-  &:after {
-    position: relative;
-    top: -0.5em;
-    font-size: 0.7em;
-    content: "↗";
-    color: #aaaaaa;
-  }
-  &.internal-link:after,
-  &.footnote:after,
-  &.reversefootnote:after {
-    content: "";
-  }
-}
-
-*:focus {
-  background: #ffe8bc !important;
-  color: black !important;
-}
-
-nav {
-  margin: 1em 0 3em;
-}
-
-#notes-entry-container {
-  display: grid;
-  grid-gap: 2em;
-  grid-template-areas:
-    "content"
-    "side";
-
-  @media (min-width: 700px) {
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: "content side";
-  }
-}
-
-.backlink-box {
-  background: $color-box-background;
-  padding: 1em;
-  border-radius: $border-radius;
+  color: $flexoki-tx2;
 }
 
 code {
-  background: #f5f5f5;
+  background: $color-box-background;
+  color: $flexoki-accent;
   padding: 0.1em 0.2em;
   border-radius: 4px;
 }
 
-.invalid-link {
-  color: #444444;
-  cursor: help;
-  background: #fafafa;
-  padding: 0 0.1em;
+ul, ol {
+  margin-left: 1.5em;
 }
 
-.invalid-link-brackets {
-  color: #ccc;
-  cursor: help;
+::-webkit-scrollbar {
+  width: 8px;
+  background: $flexoki-bg;
 }
+::-webkit-scrollbar-thumb {
+  background: $color-border;
+  border-radius: 4px;
+}
+
+.site-wrapper.home-layout {
+  width: 100vw;
+  max-width: none;
+  display: flex;
+  background: $flexoki-bg;
+}
+
+.sidebar {
+  background: $flexoki-bg;
+  color: $flexoki-tx;
+  width: 220px;
+  flex-shrink: 0;
+  padding: 2.5em 1.5em 2em 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  font-size: 1.1em;
+  box-shadow: none;
+  border-right: none;
+}
+
+.sidebar-title {
+  font-size: 2.5em;
+  font-family: 'Oswald', $font-family;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.2em;
+  color: $flexoki-accent;
+  text-transform: uppercase;
+  line-height: 1.1;
+  align-self: flex-start;
+}
+
+.sidebar-nav {
+  font-family: 'Oswald', $font-family;
+  font-size: 1.2em;
+  line-height: 2em;
+  font-weight: 700;
+  margin-bottom: 1.5em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.sidebar-nav a {
+  color: $flexoki-tx;
+  text-decoration: none;
+  padding: 0.1em 0.5em;
+  border-radius: 3px;
+  transition: background 0.2s, color 0.2s;
+  font-weight: 700;
+  display: block;
+  text-align: left;
+  border-bottom: none;
+}
+
+.sidebar-nav a:hover, .sidebar-nav a.active {
+  background: $flexoki-accent;
+  color: $flexoki-bg;
+}
+
+.sidebar-contact {
+  margin-top: 1.5em;
+  font-size: 1.1em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  align-items: flex-start;
+}
+
+.sidebar-contact .contact-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.sidebar-contact a {
+  color: $flexoki-accent;
+  font-weight: 600;
+  margin-left: 0;
+}
+
+.contact-icon {
+  filter: brightness(0) saturate(100%) invert(41%) sepia(41%) saturate(747%) hue-rotate(217deg) brightness(95%) contrast(92%);
+  vertical-align: middle;
+  margin-right: 0.2em;
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+}
+
+.site-wrapper.home-layout .wrapper {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 3em 0 3em 0;
+  display: block;
+}
+
+.page-content {
+  padding-left: 2.5em;
+  max-width: 900px;
+}
+
+.site-wrapper.home-layout main {
+  margin: 0;
+  max-width: none;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .site-wrapper.home-layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    min-height: unset;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.2em 1em;
+    justify-content: space-between;
+    font-size: 1.1em;
+  }
+  .sidebar-title {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+  .site-wrapper.home-layout .wrapper {
+    padding: 2em 1em 1em 1em;
+  }
+}
+
+.accent-heading {
+  font-size: 2.7em;
+  font-family: 'Oswald', $font-family;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 3px solid $flexoki-accent;
+  padding-bottom: 0.1em;
+  display: inline-block;
+  color: $flexoki-tx;
+}
+
+.accent {
+  color: $flexoki-accent;
+}
+
+.notes-list {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7em;
+}
+
+.note-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.note-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: none;
+  margin-bottom: 0.2em;
+  color: $flexoki-tx;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: color 0.2s;
+}
+
+.note-title:hover {
+  color: $flexoki-accent;
+}
+
+.note-arrow {
+  color: $flexoki-accent;
+  font-size: 1.1em;
+  margin-left: 0.2em;
+}
+
+.note-meta {
+  font-size: 1.1em;
+  color: $flexoki-tx2;
+  margin-top: 0.1em;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+}
+
+.site-wrapper.note-layout {
+  width: 100vw;
+  max-width: none;
+  display: flex;
+  background: $flexoki-bg;
+}
+
+.note-layout .sidebar {
+  width: 260px;
+  flex-shrink: 0;
+  padding: 3em 0 2em 2.5em;
+  font-size: 1.3em;
+}
+
+.note-layout .wrapper {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 3em 0 3em 0;
+  display: block;
+}
+
+.note-heading {
+  font-size: 2.7em;
+  font-family: 'Oswald', $font-family;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.2em;
+  color: $flexoki-tx;
+}
+
+.note-meta {
+  font-size: 1.1em;
+  color: $flexoki-tx2;
+  margin-bottom: 0.7em;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+}
+
+.note-hr {
+  border: none;
+  border-bottom: 3px solid $flexoki-accent;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+}
+
+.note-content {
+  margin-bottom: 2em;
+} 
