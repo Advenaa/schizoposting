@@ -4,25 +4,33 @@ title: About
 permalink: /about
 ---
 
-# About Advena Letters
+# Welcome to my shit
 
-Welcome to my digital garden—a collection of thoughts, ideas, and explorations that I've gathered along my journey.
+So you've stumbled into my corner of the internet. Congratulations! You're about to witness what happens when someone decides to document their thoughts publicly like some kind of intellectual exhibitionist.
 
-## What is this?
 
-This is a space where I share insights, learnings, and reflections on various topics that interest me. Think of it as a public notebook where ideas can grow and connect with others.
+## Who am I?
 
-## What to expect
+For those who don't know me, I'm that guy who falls down Wikipedia rabbit holes at 2 AM and emerges three hours later somehow connecting medieval salt trade to why your Tinder matches suck. I get genuinely excited about learning random shit, which sounds cute until you're trapped at a party listening to me explain Byzantine tax policy or why consciousness was probably a mistake.
 
-You'll find notes on:
-- Personal development and growth
-- Technology and innovation
-- Philosophy and thinking
-- Creative projects and ideas
-- And whatever else captures my curiosity
+I'm basically what happens when curiosity meets the inability to stay focused on one topic for more than five minutes. Think of me as a human version of those "fun fact" accounts, except I also have opinions about Foucault and will absolutely derail conversations with theories about why the invention of agriculture was humanity's first mistake.
 
-## Connect
+This is what happens when you give someone with too many thoughts and not enough therapy a website.
 
-Feel free to reach out if you'd like to discuss any of these ideas or just say hello. I'm always open to conversations and new perspectives.
 
-*This is a living document that grows and evolves over time.*
+## What You'll Find Here
+
+It's basically random shit that interests me, something like:
+
+- Notes on my personal development because we're all just walking anxiety machines trying to optimize our way out of the human condition
+- Thoughts on technology and innovation, my trading adventures (AKA "How I Learned to Stop Worrying and Love Losing Money")
+- Philosophy where I explain why existentialism is just depression with better marketing. 
+
+Plus whatever creative projects aren't currently decomposing in my note drafts. Really, it's whatever captures my curiosity, which is everything, because my brain treats learning like a choose-your-own-adventure book and considers "going down rabbit holes" a legitimate hobby.
+
+## Hey, you're wrong into something
+
+Look, this whole thing is just me dumping thoughts into the void and hoping someone finds them mildly interesting. If you want to argue about something I wrote, share a random fact that blew your mind, or just tell me why I'm wrong about Byzantine trade routes, hit me up. I'm always down for conversations that start normal and somehow end with us questioning whether free will exists.
+
+---
+*Remember: if you're reading this, you're procrastinating on something more important. That's okay. We're all just avoiding the void together.*

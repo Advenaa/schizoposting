@@ -1,9 +1,9 @@
 - name: "Twitter"
   icon: "icons8-twitter-bird-50.png"
-  url: "https://twitter.com/advenaletters"
-  label: "@advenaletters"
+  url: "https://twitter.com/itsadvena"
+  label: "@itsadvena"
 
 - name: "Discord"
   icon: "icons8-discord-50.png"
-  url: "https://discord.gg/advena"
-  label: "discord.gg/advena"
+  url: "https://discord.com/channels/@me/808397846633119774"
+  label: "itsadvena"
