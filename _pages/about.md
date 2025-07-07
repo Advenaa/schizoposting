@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: note_page
 title: About
 permalink: /about
 ---
@@ -11,11 +11,17 @@ So you've stumbled into my corner of the internet. Congratulations! You're about
 
 ## Who am I?
 
-For those who don't know me, I'm that guy who falls down Wikipedia rabbit holes at 2 AM and emerges three hours later somehow connecting medieval salt trade to why your Tinder matches suck. I get genuinely excited about learning random shit, which sounds cute until you're trapped at a party listening to me explain Byzantine tax policy or why consciousness was probably a mistake.
+For those who don't know me, I have a lot of nicknames online, but commonly they call me Advena. You might stumble across me in random Discord servers or Twitter conversations (I prefer calling it by the old tongues) where I'm debating something completely unimportant. But what's important for you to understand is this: 
 
-I'm basically what happens when curiosity meets the inability to stay focused on one topic for more than five minutes. Think of me as a human version of those "fun fact" accounts, except I also have opinions about Foucault and will absolutely derail conversations with theories about why the invention of agriculture was humanity's first mistake.
+> To know advena is to know chaos itself.
+
+I'm that guy who falls down Wikipedia rabbit holes at 2 AM and emerges three hours later somehow connecting Renaissance double-entry bookkeeping to why Bitcoin mining is accidentally destroying the planet. I get genuinely excited about learning random shit, which sounds cute until you're trapped at a party listening to me explain why the housing market is legalized gambling or why consciousness was probably a mistake.
+
+The thing is, once I start seeing these patterns everywhere, I can't stop. Every system reveals another system, every rabbit hole branches into five more, and suddenly I'm that person who genuinely believes understanding how things work - from medieval banking to modern algorithms - is the closest I'll get to having a useful skill. Unfortunately, this conviction tends to make me insufferable at social gatherings, which is basically just intellectual ADHD with a philosophy degree and delusions of relevance.
 
 This is what happens when you give someone with too many thoughts and not enough therapy a website.
+
+
 
 
 ## What You'll Find Here
