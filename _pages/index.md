@@ -1,5 +1,5 @@
 ---
-layout: note
+layout: page
 title: Home
 id: home
 permalink: /
