@@ -2,6 +2,13 @@
 <html lang="en">
   {% include head.html %}
   <body>
+    <!-- Mobile top bar for menu button and site title -->
+    <div class="mobile-topbar">
+      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+        ☰
+      </button>
+      <span class="mobile-topbar-title">{{ site.title | upcase }}</span>
+    </div>
     <div class="site-wrapper home-layout">
       {% include sidebar.html %}
       <div class="wrapper">

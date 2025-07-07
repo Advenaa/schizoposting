@@ -507,69 +507,24 @@ ul, ol {
 
 @media (max-width: 768px) {
   body {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.08rem;
+    line-height: 1.7;
+    padding: 0;
+    margin: 0;
+    background: $flexoki-bg;
   }
-  
-  h1 {
-    font-size: 2.2em;
-  }
-  
-  h2 {
-    font-size: 1.8em;
-  }
-  
-  h3 {
-    font-size: 1.3em;
-  }
-  
+
   .site-wrapper.home-layout {
     flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    background: $flexoki-bg;
   }
-  
+
   .sidebar {
-    width: 100%;
-    height: auto;
-    min-height: unset;
-    flex-direction: row;
-    align-items: center;
-    padding: 1em 1.5em;
-    justify-content: space-between;
-    font-size: 1em;
-    position: relative;
-    overflow-y: visible;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .sidebar-title {
-    font-size: 1.8em;
-    margin-bottom: 0;
-  }
-  
-  .sidebar-nav {
     display: none;
   }
-  
-  .sidebar-contact {
-    display: none;
-  }
-  
-  .mobile-menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    color: $flexoki-tx;
-    font-size: 1.5em;
-    cursor: pointer;
-    padding: 0.5em;
-    border-radius: 4px;
-    transition: background 0.2s;
-    
-    &:hover {
-      background: rgba($flexoki-accent, 0.1);
-    }
-  }
-  
+
   .mobile-menu {
     display: none;
     position: fixed;
@@ -577,153 +532,344 @@ ul, ol {
     left: 0;
     right: 0;
     bottom: 0;
-    background: $flexoki-bg;
+    background: darken($flexoki-bg, 2%);
     z-index: 1000;
-    padding: 2em 1.5em;
+    padding: 0;
     overflow-y: auto;
-    
+    text-align: left;
     &.active {
       display: block;
     }
   }
-  
+
   .mobile-menu-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    margin-bottom: 2em;
-    padding-bottom: 1em;
+    justify-content: space-between;
+    padding: 1.2em 1.2em 1em 1.2em;
     border-bottom: 1px solid $color-border;
+    background: none;
   }
-  
+  .mobile-menu-header .sidebar-title {
+    flex: 1 1 auto;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+    text-align: left;
+    background: none;
+    box-shadow: none;
+    letter-spacing: 0.04em;
+  }
   .mobile-menu-close {
+    flex: 0 0 auto;
+    margin-left: 1em;
     background: none;
     border: none;
     color: $flexoki-tx;
-    font-size: 1.5em;
+    font-size: 2em;
     cursor: pointer;
-    padding: 0.5em;
+    padding: 0.2em 0.5em;
     border-radius: 4px;
     transition: background 0.2s;
-    
-    &:hover {
+    align-self: flex-start;
+    min-width: 44px;
+    min-height: 44px;
+    &:hover, &:focus {
       background: rgba($flexoki-accent, 0.1);
+      outline: 2px solid $flexoki-accent;
+      outline-offset: 2px;
     }
   }
-  
+
+  .mobile-nav, .mobile-contact {
+    width: 100%;
+    padding: 0 1.2em;
+    box-sizing: border-box;
+  }
+
   .mobile-nav {
-    margin-bottom: 2em;
-    
+    margin: 1.5em 0 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2em;
+    border-bottom: 1px solid $color-border;
+    padding-bottom: 1em;
     a {
       display: block;
-      padding: 1em 0;
-      font-size: 1.2em;
+      width: 100%;
+      padding: 1.1em 0;
+      font-size: 1.15em;
       font-weight: 600;
       color: $flexoki-tx;
       text-decoration: none;
-      border-bottom: 1px solid $color-border;
-      transition: color 0.2s;
-      
-      &:hover, &.active {
-        color: $flexoki-accent;
-      }
+      border: none;
+      border-radius: 6px;
+      background: none;
+      text-align: left;
+      transition: color 0.2s, border-bottom 0.2s;
+      min-height: 44px;
+      border-bottom: 2px solid transparent;
+    }
+    a:hover, a.active {
+      color: $flexoki-accent;
+      background: none;
+      border-bottom: 2px solid $flexoki-accent;
     }
   }
-  
+
   .mobile-contact {
+    margin: 1.2em 0 0.5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
     a {
       display: flex;
       align-items: center;
-      gap: 0.8em;
-      padding: 0.8em 0;
+      gap: 0.7em;
+      width: 100%;
+      padding: 1.1em 0;
       color: $flexoki-accent;
       text-decoration: none;
       font-weight: 600;
-      transition: color 0.2s;
-      
+      font-size: 1.08em;
+      border-radius: 6px;
+      background: none;
+      min-height: 44px;
+      transition: background 0.2s, color 0.2s;
+      text-align: left;
       &:hover {
         color: lighten($flexoki-accent, 15%);
+        background: rgba($flexoki-accent, 0.07);
       }
     }
+    .contact-icon {
+      margin: 0;
+      margin-right: 0.7em;
+      width: 1.5em;
+      height: 1.5em;
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
-  
+
   .site-wrapper.home-layout .wrapper {
-    padding: 1em 1em 2em 1em;
+    padding: 1.2em 0.5em 2em 0.5em;
     margin-left: 0;
+    width: 100vw;
+    box-sizing: border-box;
   }
-  
+
   .content-inner {
-    padding: 0 0.5em;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
-  
+
   .page-content {
     padding-left: 0;
+    width: 100%;
   }
-  
-  .accent-heading {
-    font-size: 2em;
+
+  .accent-heading, .note-heading {
+    font-size: 1.5em;
+    margin-top: 1.2em;
+    margin-bottom: 0.7em;
+    line-height: 1.2;
   }
-  
-  .note-heading {
-    font-size: 2em;
-  }
-  
   .note-title {
-    font-size: 1.3em;
+    font-size: 1.15em;
+    margin-bottom: 0.2em;
+    line-height: 1.3;
   }
-  
   .notes-list {
-    gap: 1.2em;
+    gap: 1.1em;
   }
-  
   .note-item {
-    padding: 1em;
-    background: rgba($flexoki-accent, 0.05);
+    padding: 1em 0.7em;
+    background: rgba($flexoki-accent, 0.04);
     border-radius: 8px;
     border-left: 3px solid $flexoki-accent;
-  }
-  
-  a, button {
+    margin-bottom: 0.7em;
     min-height: 44px;
-    min-width: 44px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
   }
-  
   section {
     margin-bottom: 2em;
   }
-  
   blockquote {
-    padding: 1em;
+    padding: 1em 1.2em;
     margin: 1.5em 0;
+    font-size: 1em;
+    border-left-width: 4px;
   }
-  
   ul, ol {
     margin-left: 1em;
+    padding-left: 1.2em;
   }
-  
+  li {
+    margin-bottom: 0.5em;
+  }
   pre {
-    font-size: 0.9em;
+    font-size: 0.95em;
     padding: 1em;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    border-radius: 8px;
+    background: #232323;
   }
-  
   code {
-    font-size: 0.9em;
+    font-size: 0.95em;
+    padding: 0.15em 0.3em;
+    border-radius: 4px;
   }
-  
   img {
+    max-width: 100%;
     max-height: 60vh;
-    border-radius: 6px;
+    border-radius: 8px;
+    margin: 1em 0;
+    display: block;
   }
-  
-  input, textarea, select {
-    font-size: 16px;
-    padding: 0.8em;
+  hr {
+    margin: 2em 0;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, $color-border, transparent);
+  }
+
+  .mobile-menu-toggle {
+    display: block !important;
+    background: none;
+    border: none;
+    color: $flexoki-accent;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 0.1em 0.3em 0.1em 0.3em;
     border-radius: 6px;
+    transition: color 0.2s;
+    min-width: 44px;
+    min-height: 44px;
+    margin-right: 1em;
+    margin-left: 0;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover, &:focus {
+      color: lighten($flexoki-accent, 10%);
+      background: none;
+      outline: 2px solid $flexoki-accent;
+      outline-offset: 2px;
+    }
+  }
+
+  .mobile-topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 52px;
+    background: $flexoki-bg;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    z-index: 1200;
+    padding: 0 0.7em;
+    border-bottom: 1px solid $color-border;
+  }
+  .mobile-topbar-title {
+    font-family: 'Oswald', $font-family;
+    font-size: 1em;
+    font-weight: 700;
+    color: $flexoki-accent;
+    letter-spacing: 0.04em;
+    margin-left: 0.2em;
+    opacity: 0.85;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+  }
+  .mobile-nav {
+    margin: 1.2em 0 0.7em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1em;
+    border-bottom: 1px solid $color-border;
+    padding-bottom: 0.7em;
+    width: 100%;
+  }
+  .mobile-nav a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.7em 0 0.7em 0.7em;
+    font-size: 1em;
+    font-weight: 500;
+    color: $flexoki-tx;
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+    background: none;
+    text-align: left;
+    transition: color 0.2s, border-left 0.2s, font-weight 0.2s;
+    min-height: 40px;
+    border-left: 3px solid transparent;
+    border-bottom: none;
+    position: relative;
+    & > span, & > strong {
+      padding-left: 0.4em;
+    }
+  }
+  .mobile-nav a:hover, .mobile-nav a.active {
+    color: $flexoki-accent;
+    font-weight: 700;
+    border-left: 3px solid $flexoki-accent;
+    background: none;
+    border-bottom: none !important;
+  }
+  .mobile-contact {
+    margin: 1em 0 0.5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3em;
+    width: 100%;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.7em;
+      width: 100%;
+      padding: 0.7em 0 0.7em 0.7em;
+      color: $flexoki-accent;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1em;
+      border-radius: 0;
+      background: none;
+      min-height: 40px;
+      transition: color 0.2s;
+      text-align: left;
+      &:hover {
+        color: lighten($flexoki-accent, 15%);
+        background: none;
+      }
+    }
+    .contact-icon {
+      margin: 0;
+      margin-right: 0.7em;
+      width: 1.5em;
+      height: 1.5em;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .site-wrapper.home-layout {
+    padding-top: 52px;
   }
 }
 
