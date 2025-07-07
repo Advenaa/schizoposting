@@ -1,52 +1,41 @@
 <head>
-  <meta charset="UTF-8">
-
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
-
-  <meta property="og:site_name" content="{{ site.title }}">
-
-  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% endif %}
+  
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
-
-  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700,900&display=swap" rel="stylesheet">
-
-  {% if page.excerpt %}
-  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}"/>
-  {% else %}
-  <meta property="og:description" content="{{ site.title | strip_html | strip_newlines | truncate: 160 }}"/>
-  {% endif %}
-
-  {% if page.title %}
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:type" content="article">
-  {% else %}
-  <meta property="og:title" content="{{ site.title }}">
+  
+  <!-- Preconnect to Google Fonts for better performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Load fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@700;900&family=Fira+Mono&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+  
+  <!-- Open Graph meta tags for social sharing -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  {% if page.description %}
+    <meta property="og:description" content="{{ page.description }}">
   {% endif %}
-
-  {% if page.date %}
-  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
-  <meta property="article:author" content="{{ site.url }}/">
+  
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  {% if page.description %}
+    <meta name="twitter:description" content="{{ page.description }}">
   {% endif %}
-
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-
-  {% if page.image %}
-  <meta property="og:image" content="{{ site.url }}{{ page.image }}">
-  {% endif %}
-
-  <title>
-    {% if page.id == "home" %}
-      {{ site.title }}
-    {% else %}
-      {{ page.title }} &mdash; {{ site.title }}
-    {% endif %}
-  </title>
-
-  <script src="https://cdn.skypack.dev/@hotwired/turbo"></script>
+  
+  <!-- Mobile optimizations -->
+  <script src="{{ site.baseurl }}/assets/js/mobile-optimizations.js" defer></script>
 </head>

@@ -12,4 +12,70 @@
       </div>
     {% endfor %}
   </div>
+  
+  <!-- Mobile menu toggle -->
+  <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+    ☰
+  </button>
 </aside>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <div class="sidebar-title">{{ site.title | upcase }}</div>
+    <button class="mobile-menu-close" onclick="toggleMobileMenu()" aria-label="Close mobile menu">
+      ✕
+    </button>
+  </div>
+  
+  <nav class="mobile-nav">
+    <a href="{{ site.baseurl }}/" {% if page.id == 'home' %}class="active"{% endif %}>home</a>
+    <a href="{{ site.baseurl }}/about" {% if page.url contains '/about' %}class="active"{% endif %}>about</a>
+  </nav>
+  
+  <div class="mobile-contact">
+    {% for contact in site.data.contacts %}
+      <a href="{{ contact.url }}" target="_blank" rel="noopener">
+        <img class="contact-icon" src="{{ site.baseurl }}/assets/{{ contact.icon }}" alt="{{ contact.name }}">
+        {{ contact.label }}
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+function toggleMobileMenu() {
+  const mobileMenu = document.getElementById('mobileMenu');
+  const body = document.body;
+  
+  if (mobileMenu.classList.contains('active')) {
+    mobileMenu.classList.remove('active');
+    body.style.overflow = '';
+  } else {
+    mobileMenu.classList.add('active');
+    body.style.overflow = 'hidden';
+  }
+}
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', function(event) {
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  
+  if (mobileMenu.classList.contains('active') && 
+      !mobileMenu.contains(event.target) && 
+      !mobileMenuToggle.contains(event.target)) {
+    toggleMobileMenu();
+  }
+});
+
+// Close mobile menu on escape key
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenu.classList.contains('active')) {
+      toggleMobileMenu();
+    }
+  }
+});
+</script>
