@@ -5,13 +5,11 @@ id: home
 permalink: /
 ---
 
-<h1>{{ site.title }}</h1>
-
-<section>
-  <h2 class="accent-heading">Some <span class="accent">Notes</span></h2>
+<section class="wide-content">
+  <h2 class="accent-heading">Latest <span class="accent">Notes</span></h2>
   <div class="notes-list">
     {% assign sorted_notes = site.notes | sort: 'date' | reverse %}
-    {% for note in sorted_notes %}
+    {% for note in sorted_notes limit:10 %}
       <div class="note-item">
         <a class="note-title internal-link" href="{{ note.url }}">{{ note.title }}</a>
         <div class="note-meta">
@@ -20,4 +18,9 @@ permalink: /
       </div>
     {% endfor %}
   </div>
+  {% if site.notes.size > 10 %}
+    <div class="view-all-notes">
+      <a href="/notes" class="internal-link">View all notes →</a>
+    </div>
+  {% endif %}
 </section>

@@ -225,7 +225,7 @@ ul, ol {
 }
 
 .contact-icon {
-  filter: brightness(0) saturate(100%) invert(41%) sepia(41%) saturate(747%) hue-rotate(217deg) brightness(95%) contrast(92%);
+  filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
   vertical-align: middle;
   margin-right: 0.2em;
   width: 1.5em;
@@ -1156,5 +1156,55 @@ ul, ol {
     border: none;
     height: 2px;
     background: linear-gradient(to right, transparent, $color-border, transparent);
+  }
+}
+
+.all-notes-list {
+  gap: 0.15em;
+}
+
+.note-row {
+  margin-bottom: 0.15em;
+  line-height: 1.5;
+}
+
+// Homepage specific styles
+.wide-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+@media (max-width: 768px) {
+  .wide-content {
+    padding: 0 1em;
+  }
+}
+
+.view-all-notes {
+  margin-top: 2em;
+  
+  a {
+    color: $flexoki-accent;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid $flexoki-accent;
+    transition: color 0.2s, border-color 0.2s;
+    
+    &:hover {
+      color: lighten($flexoki-accent, 15%);
+      border-bottom-color: lighten($flexoki-accent, 15%);
+    }
+  }
+}
+
+// Mobile responsive adjustments for homepage
+@media (max-width: 768px) {
+  .what-is-this {
+    margin-top: 2em;
+  }
+  
+  .view-all-notes {
+    margin-top: 1.5em;
   }
 } 
