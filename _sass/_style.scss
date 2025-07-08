@@ -106,12 +106,19 @@ img {
 }
 
 blockquote {
+  font-style: italic;
+  color: #aaa;
   padding: 1.5em;
   margin: 0;
-  font-size: 1.1em;
-  background: $color-box-background;
+  background: #232424;
+  border-left: 3px solid #888;
   border-radius: $border-radius;
   color: $flexoki-tx2;
+}
+
+blockquote::before,
+blockquote::after {
+  content: none !important;
 }
 
 code {

@@ -5,8 +5,9 @@ permalink: /about
 ---
 # Welcome to My Shit
 
+Oh, you're here.
 
-Oh, you're here. This is what happens when someone with too many thoughts and not enough impulse control gets access to *vibecoding*, so I created this website with the noble intention of sharing knowledge, which is obviously just code for "inflicting my random obsessions on anyone unfortunate enough to click a link."
+This is what happens when someone with too many thoughts and not enough impulse control gets access to vibecoding, so I created this website with the noble intention of sharing knowledge, which is obviously just code for "inflicting my random obsessions on anyone unfortunate enough to click a link."
 
 ## About Me
 
@@ -16,15 +17,15 @@ Here's what you need to understand: **To know Advena is to know chaos with a col
 
 I'm that guy who falls down Wikipedia rabbit holes at 2 AM and emerges three hours later somehow connecting Renaissance double-entry bookkeeping to why Bitcoin mining is accidentally destroying the planet. I get genuinely excited about learning random shit, which sounds cute until you're trapped at a party listening to me explain why the housing market is legalized gambling.
 
-The thing is, once I start seeing these patterns everywhere, I can't stop. Every system reveals another system, every rabbit hole branches into five more, and suddenly I'm that person who genuinely believes understanding how things work—from medieval banking to modern algorithms—is the closest I'll get to having a useful skill. Unfortunately, this conviction tends to make me insufferable at social gatherings, which is basically just intellectual ADHD with a philosophy degree and delusions of relevance.
+The thing is, once I start seeing these patterns everywhere, I can't stop. Every system reveals another system, every rabbit hole branches into five more, and suddenly I'm that person who genuinely believes understanding how things work like it's the closest I'll get to having a useful skill. Unfortunately, this conviction tends to make me insufferable when talking to people, which is basically just pseudointellectual ADHD with a philosophy degree and delusions of relevance.
 
 ## Why "Stashes"?
 
-Because that's literally what this is place, where I stash all the random shit my brain collects before it turns me into the kind of person who lectures about all the shit you never heard. Here's what's currently hoarded:
+Because that's literally what this is place, where I stash all the random shit my brain collects before it turns me into the kind of person who lectures some random nonsese that you don't actually need. But here's what's currently hoarded: 
 
 **Random Intellectual Tangents** - Where I turn everyday irritations into deep insights about the human condition, like why people who walk slowly in hallways are secretly philosophers practicing mindfulness.
 
-**Trading Adventures** - AKA "How I Learned to Stop Worrying and Love Losing Money While Pretending It's Educational." Featuring my ongoing relationship with market volatility and why I'm convinced technical analysis is just astrology for people who can't do what quants do.
+**My Own Trading Adventures** - AKA "How I Learned to Stop Worrying and Love Losing Money While Pretending It's Educational." Featuring my ongoing relationship with market volatility and why I'm convinced technical analysis is just astrology for people who can't do what quants do.
 
 **Techy stuff** - Where I have deeply philosophical thoughts about AI consciousness while literally using AI to write this entire About page.
 

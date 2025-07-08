@@ -42,8 +42,8 @@ class BidirectionalLinksGenerator < Jekyll::Generator
   end
 
   def process_document_links(current_doc)
-    # Process all [[link]] patterns in the document
-    current_doc.content.gsub!(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/) do
+    # Process all [[link]] patterns in the document, but exclude image syntax ![[filename]]
+    current_doc.content.gsub!(/(?<!\!)\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/) do
       link_target = $1.strip
       link_label = $2&.strip || link_target
       
@@ -91,8 +91,8 @@ class BidirectionalLinksGenerator < Jekyll::Generator
   end
 
   def process_orphaned_links(current_doc)
-    # Convert remaining [[link]] patterns to disabled links
-    current_doc.content.gsub!(/\[\[([^\]]+)\]\]/) do
+    # Convert remaining [[link]] patterns to disabled links, but exclude image syntax ![[filename]]
+    current_doc.content.gsub!(/(?<!\!)\[\[([^\]]+)\]\]/) do
       link_text = $1
       <<~HTML.delete("\n")
         <span title='There is no note that matches this link.' class='invalid-link'>

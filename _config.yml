@@ -1,4 +1,4 @@
-title:               Advena Letters
+title:               stashes
 include:             ['_pages']
 exclude:             ['_includes/notes_graph.json']
 # You may need to change the base URL depending on your deploy configuration.
@@ -16,6 +16,9 @@ open_external_links_in_new_tab: true
 # Note that doing so will negatively the reader's privacy
 # as their browser will communicate with Twitter's servers.
 embed_tweets: false
+
+# Set to `true` to publish posts with future dates
+future: true
 
 permalink:           pretty
 relative_permalinks: false
