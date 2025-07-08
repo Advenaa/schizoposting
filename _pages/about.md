@@ -3,40 +3,42 @@ layout: note_page
 title: About
 permalink: /about
 ---
-
-# Welcome to my shit
-
-So you've stumbled into my corner of the internet. Congratulations! You're about to witness what happens when someone decides to document their thoughts publicly like some kind of intellectual exhibitionist.
+# Welcome to My Shit
 
 
-## Who am I?
+Oh, you're here. This is what happens when someone with too many thoughts and not enough impulse control gets access to *vibecoding*, so I created this website with the noble intention of sharing knowledge, which is obviously just code for "inflicting my random obsessions on anyone unfortunate enough to click a link."
 
-For those who don't know me, I have a lot of nicknames online, but commonly they call me Advena. You might stumble across me in random Discord servers or Twitter conversations (I prefer calling it by the old tongues) where I'm debating something completely unimportant. But what's important for you to understand is this: 
+## About Me
 
-> To know advena is to know chaos itself.
+They call me Advena across the internet, you may find me in Discord servers where I'm passionately wrong about economics, Twitter threads where I'm explaining why TikTok's algorithm reveals the true nature of human desire, and comment sections where I'm that person who actually read the article before having opinions about it.
 
-I'm that guy who falls down Wikipedia rabbit holes at 2 AM and emerges three hours later somehow connecting Renaissance double-entry bookkeeping to why Bitcoin mining is accidentally destroying the planet. I get genuinely excited about learning random shit, which sounds cute until you're trapped at a party listening to me explain why the housing market is legalized gambling or why consciousness was probably a mistake.
+Here's what you need to understand: **To know Advena is to know chaos with a college degree.**
 
-The thing is, once I start seeing these patterns everywhere, I can't stop. Every system reveals another system, every rabbit hole branches into five more, and suddenly I'm that person who genuinely believes understanding how things work - from medieval banking to modern algorithms - is the closest I'll get to having a useful skill. Unfortunately, this conviction tends to make me insufferable at social gatherings, which is basically just intellectual ADHD with a philosophy degree and delusions of relevance.
+I'm that guy who falls down Wikipedia rabbit holes at 2 AM and emerges three hours later somehow connecting Renaissance double-entry bookkeeping to why Bitcoin mining is accidentally destroying the planet. I get genuinely excited about learning random shit, which sounds cute until you're trapped at a party listening to me explain why the housing market is legalized gambling.
 
-This is what happens when you give someone with too many thoughts and not enough therapy a website.
+The thing is, once I start seeing these patterns everywhere, I can't stop. Every system reveals another system, every rabbit hole branches into five more, and suddenly I'm that person who genuinely believes understanding how things work—from medieval banking to modern algorithms—is the closest I'll get to having a useful skill. Unfortunately, this conviction tends to make me insufferable at social gatherings, which is basically just intellectual ADHD with a philosophy degree and delusions of relevance.
 
+## Why "Stashes"?
 
+Because that's literally what this is place, where I stash all the random shit my brain collects before it turns me into the kind of person who lectures about all the shit you never heard. Here's what's currently hoarded:
 
+**Random Intellectual Tangents** - Where I turn everyday irritations into deep insights about the human condition, like why people who walk slowly in hallways are secretly philosophers practicing mindfulness.
 
-## What You'll Find Here
+**Trading Adventures** - AKA "How I Learned to Stop Worrying and Love Losing Money While Pretending It's Educational." Featuring my ongoing relationship with market volatility and why I'm convinced technical analysis is just astrology for people who can't do what quants do.
 
-It's basically random shit that interests me, something like:
+**Techy stuff** - Where I have deeply philosophical thoughts about AI consciousness while literally using AI to write this entire About page.
 
-- Notes on my personal development because we're all just walking anxiety machines trying to optimize our way out of the human condition
-- Thoughts on technology and innovation, my trading adventures (AKA "How I Learned to Stop Worrying and Love Losing Money")
-- Philosophy where I explain why existentialism is just depression with better marketing. 
+**Philosophy for Anxious People** - Where I explain why existentialism is just depression with better marketing, and why optimistic nihilism is the only reasonable response to accidentally being conscious in an absurd universe.
 
-Plus whatever creative projects aren't currently decomposing in my note drafts. Really, it's whatever captures my curiosity, which is everything, because my brain treats learning like a choose-your-own-adventure book and considers "going down rabbit holes" a legitimate hobby.
+**Creative Projects** - The ones that aren't currently decomposing in my drafts folder like digital compost.
 
-## Hey, you're wrong into something
+Really, it's whatever captures my curiosity, which is everything, because my brain apparently missed the memo about focus being a useful life skill.
 
-Look, this whole thing is just me dumping thoughts into the void and hoping someone finds them mildly interesting. If you want to argue about something I wrote, share a random fact that blew your mind, or just tell me why I'm wrong about Byzantine trade routes, hit me up. I'm always down for conversations that start normal and somehow end with us questioning whether free will exists.
+## Why Are You Still Reading This?
+
+Look, this whole thing is just me throwing thoughts into the void and hoping someone finds them mildly interesting enough to feel less alone in their own existential confusion. If you want to argue about something I wrote, share a random fact that made you question reality, or just tell me why I'm completely wrong about something, please do.
+
+I'm always down for conversations that start with "Hey, did you know..." and somehow end with us questioning whether free will exists or if we're all just very sophisticated biological algorithms pretending to make choices.
 
 ---
-*Remember: if you're reading this, you're procrastinating on something more important. That's okay. We're all just avoiding the void together.*
+_P.S. - If you made it this far, you're either genuinely interested in my particular brand of  my pseudointellectual, or you're procrastinating harder than I am. Either way, I respect the commitment._
