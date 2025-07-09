@@ -96,7 +96,7 @@ The absolute legend revolutionized philosophy twice with completely opposite ide
 ---
 # The Language Game of Discipline
 
-![[Pasted image 20250705010313.png]]_Joseph Kosuth: One and Three Chairs (1965) - Is it a chair? A photo? A definition? Yes._
+![[Pasted image 20250705010903.png]]_Joseph Kosuth: One and Three Chairs (1965) - Is it a chair? A photo? A definition? Yes._
 
 So here's what Wittgenstein figured out after his whole "I solved everything, bye forever" phase: we get tangled up in our own words.
 
